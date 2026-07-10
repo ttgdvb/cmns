@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Alex+Brush&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-handwritten: "Alex Brush", cursive;
+  
+  --color-brand-bg: #fdf2f2;
+  --color-brand-ink: #2d1b1b;
+  --color-brand-accent: #e63946;
+  --color-brand-accent-hover: #d62839;
+}
+
+/* Custom CSS Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(230, 57, 70, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(230, 57, 70, 0.4);
+}
+
+/* Floating custom animations */
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.12); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.12); }
+  70% { transform: scale(1); }
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Custom visual utilities */
+.animate-heartbeat {
+  animation: heartBeat 1.5s infinite ease-in-out;
+}
+
+.animate-bounceslow {
+  animation: bounceSlow 3s infinite ease-in-out;
+}
+
+.display-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  line-height: 0.85;
+}
+
+.vertical-rail {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.photo-frame {
+  border-radius: 2px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 12px;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
+}
+
+.photo-frame:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+.music-bar {
+  height: 2px;
+  background: var(--color-brand-ink);
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(0.4);
+}
+
+.bg-amber-150\/40 {
+  background-color: rgba(253, 246, 227, 0.4);
+}
+
+.bg-rose-250 {
+  background-color: #fda4af;
+}
+
+.bg-rose-350 {
+  background-color: #fca5a5;
+}
+
+.border-zinc-150\/40 {
+  border-color: rgba(228, 228, 231, 0.4);
+}
