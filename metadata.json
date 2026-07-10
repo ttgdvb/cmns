@@ -1,0 +1,6 @@
+{
+  "name": "Birthday Surprise",
+  "description": "Một trang web chúc mừng sinh nhật ấm áp dành cho em gái thân thiết với hiệu ứng nhạc nền, album ảnh kỷ niệm xinh đẹp và công cụ soạn thư chúc mừng ý nghĩa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
